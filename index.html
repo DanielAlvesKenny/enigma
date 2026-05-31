@@ -492,142 +492,93 @@ CELULAR DEITADO / LANDSCAPE
 and (max-width:700px)
 and (orientation:landscape){
 
-/* painel ocupa a tela toda */
-
 #panel{
-
 height:100dvh;
 width:auto;
-
 }
-
-/* fundo */
 
 #bg{
-
 height:100dvh;
 width:auto;
-
 }
 
-/* display digital */
+/* display */
 
 #display{
-
-top:20.8%;
+top:20.5%;
 height:9%;
-gap:2px;
-
+gap:3px;
 }
 
 .digit{
-
-font-size:16px;
-
+font-size:24px;
 }
 
 .sep{
-
-font-size:12px;
+font-size:16px;
 margin:0 1px;
-
 }
 
 /* locks */
 
 .lock{
-
-font-size:04px;
-letter-spacing:0px;
-
-/* pulso mais leve */
+font-size:10px;
+letter-spacing:0;
 animation:pulseMobile 2.5s infinite ease-in-out;
 }
 
 #alphaLock{
-left:51%;
+left:50%;
 top:72%;
 }
 
 #betaLock{
-left:51%;
+left:50%;
 top:77%;
 }
 
 #gammaLock{
-left:51%;
+left:50%;
 top:82%;
 }
 
 /* status */
 
 #status{
-
-font-size:05px;
-
+font-size:9px;
+line-height:1.1;
 }
 
-/* resultado */
+/* protocolo */
 
 #vault{
-
-font-size:05px;
-
+font-size:9px;
+line-height:1.1;
 }
 
 /* bombas */
 
 #bombs{
-
-left:45%;
-top:82.5%;
-
-transform:scale(.60);
+left:47%;
+top:84%;
+transform:scale(.72);
 transform-origin:center;
-
 }
-
-}
-
-/* risco estrutural mobile */
 
 #bombTitle{
-
-font-size:5px;
+font-size:8px;
 letter-spacing:1px;
 margin-bottom:1px;
-
 }
 
 #bombDots{
-
-font-size:7px;
+font-size:9px;
 letter-spacing:2px;
-
 }
 
 #dangerAlert{
-font-size:5px;
+font-size:8px;
 margin-top:1px;
-}
-
-/* pulso mobile */
-
-@keyframes pulseMobile{
-
-0%{
-transform:scale(1);
-opacity:.9;
-}
-
-50%{
-transform:scale(1.02);
-opacity:1;
-}
-
-100%{
-transform:scale(1);
-opacity:.9;
 }
 
 }
@@ -1563,10 +1514,6 @@ document.getElementById("bg").src=
 update();
 
 
-
-alert(
-window.innerWidth + " x " + window.innerHeight
-);
 
 </script>
 </body>
