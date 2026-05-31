@@ -491,8 +491,7 @@ CELULAR DEITADO / LANDSCAPE
 
 @media screen
 and (orientation:landscape)
-and (max-height:450px)
-and (pointer:coarse){
+and (max-height:450px){
 
 #panel{
 height:100dvh;
@@ -589,9 +588,10 @@ margin-top:1px;
 /* ===== TABLET LANDSCAPE (701–1400) ===== */
 
 @media screen
-and (min-width:760px)
-and (max-height:400px)
-and (orientation:landscape){
+and (min-width:701px)
+and (max-width:1400px)
+and (orientation:landscape)
+and (min-height:451px){
 
 
 .digit{
@@ -1503,18 +1503,6 @@ el.requestFullscreen();
 else if(el.webkitRequestFullscreen){
 el.webkitRequestFullscreen();
 }
-
-
-setTimeout(()=>{
-
-alert(
-"FULL\n" +
-window.innerWidth + " x " +
-window.innerHeight
-);
-
-},500);
-
 
 
 const fsBtn=
